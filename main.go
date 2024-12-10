@@ -1,11 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"live_coding/internal/database"
 	"live_coding/internal/user/routes"
 	"log"
+	"os"
 )
 
 func main() {
@@ -30,8 +32,10 @@ func startServer() {
 
 	routes.SetUserRoutes(r)
 
-	log.Println("http://localhost:8083")
-	err := r.Run(":8083")
+	url := fmt.Sprintf("%s:%s", os.Getenv("HOST"), os.Getenv("PORT"))
+
+	log.Println(url)
+	err := r.Run(url)
 	if err != nil {
 		log.Fatal("[server err]:", err)
 		return
