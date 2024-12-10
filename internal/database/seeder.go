@@ -4,8 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/google/uuid"
-	"live_coding/entity"
+	"live_coding/internal/user/entity"
+
 	"os"
+
 	"sync"
 )
 

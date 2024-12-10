@@ -2,7 +2,8 @@ package database
 
 import (
 	"fmt"
-	"live_coding/entity"
+	"live_coding/internal/user/entity"
+
 	"log"
 )
 

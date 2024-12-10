@@ -3,7 +3,7 @@ package repository
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"live_coding/entity"
+	"live_coding/internal/user/entity"
 )
 
 type UserRepositoryInterface interface {

@@ -1,7 +1,7 @@
 package responses
 
 import (
-	"live_coding/entity"
+	"live_coding/internal/user/entity"
 )
 
 type Address struct {

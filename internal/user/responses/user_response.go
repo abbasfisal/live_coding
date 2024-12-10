@@ -2,7 +2,8 @@ package responses
 
 import (
 	"github.com/google/uuid"
-	"live_coding/entity"
+	"live_coding/internal/user/entity"
+
 	"strings"
 )
 
